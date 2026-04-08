@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box glass">
+            <input type="text" placeholder="Search city..." id="cityInput">
+            <button onclick="handleSearch()">Search</button>
+        </div>
+
+        <div class="main-weather glass">
+            <div class="icon animated-sun">☀️</div>
+            <h1>28°C</h1>
+            <p>Warangal, India</p>
+        </div>
+
+        <div class="featured-grid">
+            <div class="card glass">
+                <h3>New York</h3>
+                <div class="icon animated-cloud">☁️</div>
+                <p>12°C</p>
+            </div>
+            <div class="card glass">
+                <h3>London</h3>
+                <div class="icon animated-rain">🌧️</div>
+                <p>8°C</p>
+            </div>
+            <div class="card glass">
+                <h3>Tokyo</h3>
+                <div class="icon animated-sun">☀️</div>
+                <p>22°C</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

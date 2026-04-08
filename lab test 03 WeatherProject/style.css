@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container { width: 90%; max-width: 800px; text-align: center; }
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.search-box { display: flex; gap: 10px; }
+input { flex: 1; background: transparent; border: none; color: white; padding: 10px; outline: none; }
+button { background: #00d2ff; border: none; padding: 10px 20px; border-radius: 10px; cursor: pointer; color: white; }
+
+.featured-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+
+/* Animations */
+.animated-sun { font-size: 50px; animation: spin 5s linear infinite; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+.animated-cloud { font-size: 50px; animation: float 3s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+@media (max-width: 600px) { .featured-grid { grid-template-columns: 1fr; } }
